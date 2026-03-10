@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Procedural Landscape</title>
+<title>Procedural Landscape Generator</title>
 </head>
 
 <body>
 
 <h1>Procedural Landscape Generator</h1>
 
+<button onclick="generateTerrain()">Generate Terrain</button>
+
+<br><br>
+
 <canvas id="terrain" width="500" height="500"></canvas>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noisejs/2.1.0/perlin.min.js"></script>
 
 <script>
+
+function generateTerrain(){
 
 const canvas = document.getElementById("terrain");
 const ctx = canvas.getContext("2d");
@@ -22,7 +28,7 @@ noise.seed(Math.random());
 for (let x = 0; x < canvas.width; x++) {
   for (let y = 0; y < canvas.height; y++) {
 
-    let height = noise.perlin2(x * 0.01, y * 0.01) * 100;
+    let height = noise.perlin2(x * 0.02, y * 0.02) * 100;
     let color = height + 120;
 
     ctx.fillStyle = `rgb(${color},${color},${color})`;
@@ -30,6 +36,10 @@ for (let x = 0; x < canvas.width; x++) {
 
   }
 }
+
+}
+
+generateTerrain();
 
 </script>
 
