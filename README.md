@@ -1,15 +1,16 @@
-# procedural-natural-landscape
+# Procedural Landscape Workshop
 
-This project generates a procedural landscape using algorithmic noise functions. 
-Instead of manually designing terrain, the program creates landscapes using 
-randomized values for water, grass, hills, and mountains.
+This project generates a procedural landscape using algorithmic terrain generation. 
+Instead of manually designing the terrain, the program assigns elevation values to 
+each pixel using randomized calculations.
 
-The system runs in a web browser using JavaScript and HTML canvas. 
-Each time the "Generate Terrain" button is clicked, a new landscape is produced.
+The system categorizes elevation values into terrain types such as water, grass, 
+hills, and mountains. Each time the user presses the "Generate Terrain" button, 
+a new terrain map is created.
 
-The project is hosted online using GitHub Pages so users can interact 
-with the system through the web.
+The project demonstrates how computational systems can generate visual environments 
+through algorithmic processes and how programming languages allow humans to interact 
+with these systems.
 
-## How to Use
-Click the "Generate Terrain" button to create a new landscape. 
-Refresh the page to start over.
+The project is hosted online using GitHub Pages so that users can interact with the 
+terrain generator through the web.
