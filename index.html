@@ -1,3 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Procedural Landscape Generator</title>
+
+<style>
+body{
+font-family: Arial;
+text-align: center;
+background: #111;
+color: white;
+}
+
+canvas{
+border:2px solid white;
+margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Procedural Landscape Generator</h1>
+
+<p>
+This interactive system generates procedural landscapes using algorithmic randomness.
+Each time the button is pressed, a new terrain pattern is created that simulates
+water, grass, hills, and mountains.
+</p>
+
+<button onclick="generateTerrain()">Generate Terrain</button>
+
+<br><br>
+
+<canvas id="terrain" width="500" height="500"></canvas>
+
 <script>
 
 function generateTerrain(){
@@ -33,3 +71,6 @@ for(let x = 0; x < canvas.width; x++){
 generateTerrain();
 
 </script>
+
+</body>
+</html>
